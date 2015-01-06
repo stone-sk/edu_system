@@ -15,7 +15,7 @@ public class CourseDao {
 		Class.forName("com.mysql.jdbc.Driver");
 		String host = "localhost";
 		String port = "3306";
-		String url = "jdbc:mysql://" + host + ":" + port +"/blog";
+		String url = "jdbc:mysql://" + host + ":" + port +"/edu_system";
 		String dbuser = "root";
 		String dbpwd = "1234"; 
 		conn = DriverManager.getConnection(url, dbuser, dbpwd);

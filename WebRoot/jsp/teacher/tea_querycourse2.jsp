@@ -1,6 +1,6 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE body PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <body bgcolor=#cdf2e3>
 	<center><font size="+1" color="red">${msg7 }</font></center>
@@ -8,14 +8,14 @@
   	<form action="/EduSystem/servlet/Tea_ExportScoreServlet" method="post">
   		<table width="1000" height="200" align="center" border="1" cellpadding="3">
 			  <tr bgcolor="#B0E0E6">
-			    <td colspan="5"> �γ���Ϣ���£�</td>
+			    <td colspan="5"> 课程信息如下：</td>
 			  </tr>
 			  <tr bgcolor="#F0FFF0">
-			    <td><div align="center">�γ̱��</div></td>
-			    <td><div align="center">�γ����</div></td>
-			    <td><div align="center">ѧ��ѧ��</div></td>
-			    <td><div align="center">ѧ������</div></td>
-			    <td><div align="center">����</div></td>
+			    <td><div align="center">课程编号</div></td>
+			    <td><div align="center">课程名称</div></td>
+			    <td><div align="center">学生学号</div></td>
+			    <td><div align="center">学生姓名</div></td>
+			    <td><div align="center">分数</div></td>
 			  </tr>
   		 <c:forEach items="${scores}" var="score">
 	  		<tr bgcolor="#F0FFF0">
@@ -26,14 +26,14 @@
 			    <td>
 			    	<c:choose>
 				 		<c:when test="${score.score==0 }">
-	  					<div align="center">δ�Ƿ�</div>
+	  					<div align="center">未登分</div>
 	  			  		</c:when>
 	  			  		<c:otherwise>
 	  			  	       <c:choose>
-	  			  	          <c:when test="${score.operation==null||score.operation=='�ݴ�'}">
+	  			  	          <c:when test="${score.operation==null||score.operation=='暂存'}">
 	  					      <div align="center"><input type="text" name="score" value="${score.score }"></div>
 	  				          </c:when>
-	  				          <c:when test="${score.operation=='�ύ'}">
+	  				          <c:when test="${score.operation=='提交'}">
 	  					      <div align="center">${score.score }</div>
 	  				          </c:when>
 	  				       </c:choose>
@@ -42,7 +42,7 @@
 	  			</td> </tr>
 	  		</c:forEach>
 	  		<tr bgcolor="#B0E0E6">
-	       		<td colspan="6"><div align="center"><input type="submit" value="������PDF�ļ�"></div></td>
+	       		<td colspan="6"><div align="center"><input type="submit" value="导出到PDF文件"></div></td>
 	    	</tr>
   	      </table>
 	   </form>

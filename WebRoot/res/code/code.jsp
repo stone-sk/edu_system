@@ -4,6 +4,8 @@
 <%@page import="java.awt.Font"%>
 <%@page import="java.awt.Color"%>
 <%
+	int num = (int)Double.parseDouble(request.getParameter("num"));
+
 	//让这个图片不存在于客户端缓存
 	response.setHeader("Cache-Control","no-cache");
 	int width = 100,height = 30;
@@ -18,10 +20,10 @@
 	gra.drawRect(0,0,width-1,height-1);
 	
 	String str = "";
-	str = str + (int)(Math.random()*10);
-	str = str + (int)(Math.random()*10);
-	str = str + (int)(Math.random()*10);
-	str = str + (int)(Math.random()*10);
+	str = str + num;
+	if (str.length() < 4) {
+		str += (int)(Math.random() * 10);
+	}
 	
 	session.setAttribute("code",str);
 	

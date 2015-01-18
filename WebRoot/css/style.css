@@ -9,13 +9,26 @@ div.content {
 	z-index: 100;
 }
 
+
+#code {
+	position: absolute;
+	top: 250px;
+	left: 350px;
+}
+
+#select {
+	position: absolute;
+	top: 350px;
+	left: 175px;
+}
+
 div.content table {
 	width: 200px;
 	padding: 0px;
 	margin: 0px;
 	position: absolute;
-	left: 128px;
-	bottom: 40px;
+	left: 140px;
+	bottom: 30px;
 }
 
 div.content td {
@@ -34,4 +47,12 @@ td input {
 
 body {
 	background-image: url("../images/bg.png"); 
+}
+
+.imgvcodehidden {
+	display: none;
+}
+
+.imgvcodeshow {
+	display: show;
 }

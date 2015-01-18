@@ -2,13 +2,9 @@ $(function() {
 	$("#user").val("请输入用户名");
 	$("#pwd").css("color", "gray");
 	$("#user").css("color", "gray");
+	$("#vcode").css("color", "gray");
 	$("#user").focus(function() {
-		if ($("#user").val() == "请输入用户名" || $("#user").val() == "用户名不存在!") {
-			$("#user").val("");
-			$("#user").css("color", "gray");
-		}
-
-		if ($("#user").val() == "必须为5到19位的英文和数字") {
+		if ($("#user").val() == "请输入用户名") {
 			$("#user").val("");
 			$("#user").css("color", "gray");
 		}
@@ -18,11 +14,6 @@ $(function() {
 		if ($("#pwd").val() == "请输入密码") {
 			$("#pwd").val("");
 			document.getElementById("pwd").type = "password";
-		}
-
-		if ($("#pwd").val() == "必须为5到19位的英文和数字" || $("#pwd").val() == "密码错误！") {
-			document.getElementById("pwd").type = "password";
-			$("#pwd").val("");
 			$("#pwd").css("color", "gray");
 		}
 	});
@@ -40,5 +31,27 @@ $(function() {
 			$("#pwd").val("请输入密码");
 			$("#pwd").css("color", "gray");
 		}
+	});
+	
+	$("#imgvcode").attr("src", "./res/code/code.jsp?num="+Math.random() * 10000);
+	$("#vcode").focus(function() {
+		if ($("#vcode").val() == "请输入验证码") {
+			$("#vcode").val("");
+			$("#vcode").css("color", "gray");
+		}
+		$("#imgvcode").attr("class", "imgvcodeshow");
+		$("#imgvcode").attr("src", "./res/code/code.jsp?num="+Math.random() * 10000);
+	});
+	
+	$("#vcode").blur(function() {
+		if ($("#vcode").val() == "") {
+			$("#vcode").val("请输入验证码");
+			$("#vcode").css("color", "gray");
+		}
+		$("#imgvcode").attr("class", "imgvcodehidden");
+	});
+	
+	$("#login_btn").click(function () {
+		$("#form1").submit();
 	});
 });

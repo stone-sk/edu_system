@@ -6,6 +6,9 @@
 <%@page import="vo.Course"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
+	</head>
 <body bgcolor=#cdf2e3>
 <table width="1000" height="200" align="center" border="1" cellpadding="3">
   <tr bgcolor="#B0E0E6">

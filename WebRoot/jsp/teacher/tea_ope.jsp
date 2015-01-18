@@ -2,9 +2,12 @@
 <%@page import="vo.Student"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
+	</head>
 	<body bgcolor="#cdf2e3">
 		<table width="100%" height="100%" border="1">
-			<tr height="10%"><td colspan="2"><p><img src="/EduSystem/res/images/img01.jpg"></p></td></tr>
+			<tr height="10%"><td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/EduSystem/images/logo.png"/><span style="padding:0px;margin:0px;"><font size=9>教务系统欢迎您</font></span></td></tr>
 			<tr>
 				<td height="10%" width="10%" align="center"><a href="/EduSystem/servlet/Tea_QueryCourse1Servlet" target="iframe1" style=text-decoration:none>查看课程</a></td>
 				<td rowspan="8"><iframe width="100%" height="100%" name="iframe1" frameborder="0" src="/EduSystem/jsp/right.jsp"></iframe></td>

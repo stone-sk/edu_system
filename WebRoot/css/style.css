@@ -2,7 +2,7 @@
 div.content {
 	position: absolute;
 	top: 150px;
-	right: 200px;
+	left: 550px;
 	width: 500px;
 	height: 375px;
 	background: url("/EduSystem/images/login-form.png");
@@ -38,7 +38,7 @@ div.content td {
 	cursor: pointer;
 }
 
-td input {
+div.content td input {
 	height: 40px;
 	width: 170px;
 	border: none;
@@ -66,5 +66,11 @@ body {
 h2 {
 	margin-top: 50px;
 	text-align: center;
-	color: #
+	color: #556B2F;
+}
+
+.logo {
+	top: 20px;
+	position: absolute;
+	left: 400px;
 }

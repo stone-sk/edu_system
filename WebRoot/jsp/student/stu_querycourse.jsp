@@ -8,6 +8,9 @@
 <%@page import="dao.ScoreDao"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
+	</head>
 <body bgcolor=#cdf2e3>
 	<center><font size="+1" color="red">${msg4}</font></center>	
 	<c:if test="${msg4==null}">

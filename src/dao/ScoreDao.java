@@ -56,7 +56,7 @@ public class ScoreDao {
 					      				" when score between 80 and 90 then '80-90'"+
 					      				" else '90-100' end as 分数段,count(*)人数 "+
 					 " from (select A.courseno courseno,B.coursename coursename,A.score score from" +
-					 " t_score A join t_course B on A.courseno=B.courseno where A.courseno='"+courseno+"')"+
+					 " t_score A join t_course B on A.courseno=B.courseno where A.courseno='"+courseno+"')E"+
 					 " group by courseno,coursename,case when score between 0 and 60 then '0-60'"+
 					 					" when score between 60 and 70 then '60-70'"+ 
 					 					" when score between 70 and 80 then '70-80'"+ 

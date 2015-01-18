@@ -9,8 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
 	</head>
 	<body>
-		<img src="/EduSystem/images/logo.png" alt="登录按钮" />
-		<h2>GoodEdu 教务系统欢迎您</h2>
+		<img class="logo" src="/EduSystem/images/logo.png"/><h2>教务系统欢迎您</h2>
 		<div class="content">
 			<form id="form1" method="post" action="/EduSystem/servlet/LoginServlet" name="form1">
 				<table width="90%" align="center" class="tablelist">

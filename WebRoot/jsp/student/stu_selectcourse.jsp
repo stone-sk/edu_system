@@ -9,6 +9,9 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
+	</head>
 <body bgcolor=#cdf2e3>
 	<center><font size="+1" color="red">${msg2}</font></center>
 	<c:if test="${msg2==null}">

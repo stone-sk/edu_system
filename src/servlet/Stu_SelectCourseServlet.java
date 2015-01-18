@@ -42,14 +42,6 @@ public class Stu_SelectCourseServlet extends HttpServlet {
 			dispatcher.forward(request, response); //内部跳转，将处理信息存储在request中
 		}catch(Exception ex){	ex.printStackTrace();}
 	}
-	/** 
-	 * FunName:           doPost 
-	 * Description :      对学生选课信息进行处理
-	 * @param：			  HttpServletRequest request, HttpServletResponse response
-	 * @return：			  无
-	 * @Author:           王昭阳
-	 * @Create Date:      2010-08-08
-	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

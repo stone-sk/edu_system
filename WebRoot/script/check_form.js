@@ -33,14 +33,14 @@ $(function() {
 		}
 	});
 	
-	$("#imgvcode").attr("src", "./res/code/code.jsp?num="+Math.random() * 10000);
+	$("#imgvcode").attr("src", "/EduSystem/res/code/code.jsp?num="+Math.random() * 10000);
 	$("#vcode").focus(function() {
 		if ($("#vcode").val() == "请输入验证码") {
 			$("#vcode").val("");
 			$("#vcode").css("color", "gray");
 		}
 		$("#imgvcode").attr("class", "imgvcodeshow");
-		$("#imgvcode").attr("src", "./res/code/code.jsp?num="+Math.random() * 10000);
+		$("#imgvcode").attr("src", "/EduSystem/res/code/code.jsp?num="+Math.random() * 10000);
 	});
 	
 	$("#vcode").blur(function() {

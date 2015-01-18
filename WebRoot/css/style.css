@@ -5,7 +5,7 @@ div.content {
 	left: 0px;
 	width: 500px;
 	height: 375px;
-	background: url(../images/login-form.png);
+	background: url("/EduSystem/images/login-form.png");
 	z-index: 100;
 }
 
@@ -46,7 +46,7 @@ td input {
 }
 
 body {
-	background-image: url("../images/bg.png"); 
+	background-image: url("/EduSystem/images/bg.png"); 
 }
 
 .imgvcodehidden {

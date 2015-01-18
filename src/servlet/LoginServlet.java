@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 			/*2.帐号输入不能为空*/
 			if(account!=null && !account.equals("")){
 				/*3.1 学生登录*/
-				if(type.equals("student")){ 
+				if(type.equals("student")){
 					StudentDao sdao = new StudentDao();
 					type = "学生";
 					try{

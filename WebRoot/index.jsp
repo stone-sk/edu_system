@@ -4,9 +4,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>教务管理管理系统——主界面</title>
-		<script src="./script/jquery.js" type="text/javascript"></script>
-		<script src="./script/check_form.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="/EduSystem/script/jquery.js" type="text/javascript"></script>
+		<script src="/EduSystem/script/check_form.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
 	</head>
 	<body>
 		<div class="content">
@@ -23,7 +23,7 @@
 					</tr>
 					<tr>
 						<td align="center">
-							<img src="./images/login-btn.png" alt="登录按钮" id="login_btn" />
+							<img src="/EduSystem/images/login-btn.png" alt="登录按钮" id="login_btn" />
 						</td>
 					</tr>
 				</table>

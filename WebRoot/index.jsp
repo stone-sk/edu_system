@@ -6,7 +6,7 @@
 		<title>教务管理管理系统——主界面</title>
 		<script src="./script/jquery.js" type="text/javascript"></script>
 		<script src="./script/check_form.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
 	</head>
 	<body>
 		<div class="content">

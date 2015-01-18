@@ -39,10 +39,10 @@
 	  			  		</c:when>
 	  			  		<c:otherwise>
 	  			  	       <c:choose>
-	  			  	          <c:when test="${score.state==null||score.state=='暂存'}">
+	  			  	          <c:when test="${score.state==null||score.state=='save'}">
 	  					      <div align="center"><input type="text" name="score" value="${score.score }"></div>
 	  				          </c:when>
-	  				          <c:when test="${score.state=='提交'}">
+	  				          <c:when test="${score.state=='submit'}">
 	  					      <div align="center">${score.score }</div>
 	  				          </c:when>
 	  				       </c:choose>
@@ -51,8 +51,8 @@
 	  			</td> </tr>
 	  		</c:forEach>
 	  		<tr bgcolor="#B0E0E6">
-		       <td colspan="6"><div align="center"><input type="submit" name="submit" value="暂存">
-		       <input type="submit" name="submit" value="提交"></div></td>
+		       <td colspan="6"><div align="center"><input type="submit" name="submit" value="save">
+		       <input type="submit" name="submit" value="submit"></div></td>
 			</tr>
   	      </table>
 	   </form>

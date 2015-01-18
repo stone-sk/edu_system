@@ -9,7 +9,6 @@ div.content {
 	z-index: 100;
 }
 
-
 #code {
 	position: absolute;
 	top: 250px;
@@ -46,7 +45,7 @@ td input {
 }
 
 body {
-	background-image: url("/EduSystem/images/bg.png"); 
+	background-image: url("/EduSystem/images/bg.png");
 }
 
 .imgvcodehidden {

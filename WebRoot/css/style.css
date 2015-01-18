@@ -2,7 +2,7 @@
 div.content {
 	position: absolute;
 	top: 150px;
-	left: 0px;
+	right: 200px;
 	width: 500px;
 	height: 375px;
 	background: url("/EduSystem/images/login-form.png");
@@ -54,4 +54,17 @@ body {
 
 .imgvcodeshow {
 	display: show;
+}
+
+.bottom {
+	bottom: 0px;
+	left: 650px;
+	position: absolute;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 50px;
+	text-align: center;
+	color: #
 }

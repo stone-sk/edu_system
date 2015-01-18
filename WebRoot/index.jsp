@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="/EduSystem/css/style.css">
 	</head>
 	<body>
+		<img src="/EduSystem/images/logo.png" alt="登录按钮" />
+		<h2>GoodEdu 教务系统欢迎您</h2>
 		<div class="content">
 			<form id="form1" method="post" action="/EduSystem/servlet/LoginServlet" name="form1">
 				<table width="90%" align="center" class="tablelist">
@@ -36,5 +38,8 @@
 				<img id="imgvcode" class="imgvcodehidden" alt="验证码" />
 			</div>
 		</div>
+		<p class="bottom">
+			<font size="-1" color="#556B2F">Copyright (C) GoodEdu 2014-2014, All Rights Reserved</font>
+		</p>
   </body>
 </html>

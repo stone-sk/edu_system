@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+div.content {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	width: 500px;
+	height: 375px;
+	background: url(./images/login-form.png);
+	z-index: 100;
+}
+
+div.content table {
+	width: 200px;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	left: 128px;
+	bottom: 40px;
+}
+
+div.content td {
+	height: 50px;
+}
+
+#login_btn:hover {
+	cursor: pointer;
+}
+
+td input {
+	height: 40px;
+	width: 170px;
+	border: none;
+}
